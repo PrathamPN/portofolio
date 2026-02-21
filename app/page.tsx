@@ -1,8 +1,37 @@
+"use client";
+import dynamic from "next/dynamic";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import SkillsSection from "./components/SkillsSection";
+import KeyboardSection from "./components/KeyboardSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
+import ScrollProgress from "./components/ScrollProgress";
+
+const FireCrystals = dynamic(() => import("./components/FireCrystals"), { ssr: false });
+
 export default function Home() {
   return (
-    <main style={{ padding: '50px', fontFamily: 'sans-serif' }}>
-      <h1>Welcome to my new site! 🚀</h1>
-      <p>The default screen is gone.</p>
-    </main>
+    <>
+      <ScrollProgress />
+      <FireCrystals />
+      <div id="content">
+        <Navbar />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <SkillsSection />
+          <KeyboardSection />
+          <ProjectsSection />
+          <ContactSection />
+        </main>
+        <footer className="footer">
+          <div className="container">
+            <p>BE AI &amp; ML · Sahyadri College of Engineering &amp; Management · Built with 🔥 by <span>Pratham P N</span> · 2026</p>
+          </div>
+        </footer>
+      </div>
+    </>
   );
 }
