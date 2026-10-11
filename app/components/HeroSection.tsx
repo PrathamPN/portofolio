@@ -102,7 +102,7 @@ export default function HeroSection() {
                     <div className="hero-stats reveal delay-4">
                         {[
                             { target: 8, suffix: "+", label: "Projects" },
-                            { target: 3, suffix: "rd", label: "Year BE" },
+                            { target: 4, suffix: "th", label: "Year BE" },
                             { target: 5, suffix: "+", label: "Tech Stacks" },
                         ].map(s => (
                             <div key={s.label}>
