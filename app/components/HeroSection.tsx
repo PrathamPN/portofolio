@@ -96,6 +96,12 @@ export default function HeroSection() {
                                 <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
                         </a>
+                        <a href="/resume.pdf" download="Pratham_PN_Resume.pdf" className="btn-ghost">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
+                            </svg>
+                            Download CV
+                        </a>
                         <a href="#contact" className="btn-ghost">Get in Touch</a>
                     </div>
 

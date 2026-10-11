@@ -16,8 +16,10 @@ export default function Navbar() {
                 <ul className="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#keyboard">Keyboard</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="/resume.pdf" download="Pratham_PN_Resume.pdf" className="nav-cv-btn">CV 📄</a></li>
                     <li><a href="#contact" className="nav-cta">Hire Me</a></li>
                 </ul>
             </div>
